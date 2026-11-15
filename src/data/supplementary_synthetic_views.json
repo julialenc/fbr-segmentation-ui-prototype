@@ -1,0 +1,95 @@
+{
+  "_comment": "Additional SYNTHETIC views authored for the prototype to exercise optional fields (per 100 ml basis, ambiguous / not-assessed claim states, model-input flags, supplied interpretation text, 2 and 5 segment columns). Invented values. Not findings.",
+  "views": [
+    {
+      "id": "demo-de-beverages",
+      "region": "Germany",
+      "category": "Beverages",
+      "nutrition_basis": "per 100 ml",
+      "segment_count_basis": "Synthetic eligible records with complete label nutrition, interface testing only; not sales or market share",
+      "claims_basis": "Synthetic subsample of packs selected for OCR/LLM review; not representative of all records",
+      "metric_groups": [
+        {
+          "id": "composition",
+          "label": "Nutritional composition",
+          "metrics": [
+            { "key": "energy", "label": "Energy", "unit": "kcal/100 ml", "statistic": "Illustrative median", "decimals": 0, "used_in_model": true, "description": "Energy as declared on label, illustrative median within the segment." },
+            { "key": "sugars", "label": "Sugars", "unit": "g/100 ml", "statistic": "Illustrative median", "used_in_model": true },
+            { "key": "protein", "label": "Protein", "unit": "g/100 ml", "statistic": "Illustrative median", "used_in_model": false, "description": "Shown descriptively; illustrative example of a characteristic not used as a model input." },
+            { "key": "salt", "label": "Salt", "unit": "g/100 ml", "statistic": "Illustrative median", "decimals": 2 }
+          ]
+        },
+        {
+          "id": "formulation",
+          "label": "Formulation markers",
+          "description": "Illustrative share of segment records whose ingredient list contains the marker.",
+          "metrics": [
+            { "key": "sweetener_share", "label": "Contains sweetener", "unit": "% of segment records", "statistic": "Share", "decimals": 0, "used_in_model": true }
+          ]
+        }
+      ],
+      "claim_rows": [
+        { "key": "no_added_sugar", "label": "\u201cNo added sugar\u201d wording", "description": "Wording detected on front-of-pack text in assessed packs." },
+        { "key": "natural", "label": "Naturalness wording" }
+      ],
+      "interpretation_rows": [
+        { "key": "analyst_note", "label": "Analyst note (supplied)", "description": "Free text supplied with the data. The interface never generates interpretation." }
+      ],
+      "segments": [
+        {
+          "id": "de-1",
+          "name": "Profile I (placeholder)",
+          "description": "Synthetic demonstration only",
+          "record_count": 240,
+          "metrics": { "energy": 42, "sugars": 9.8, "protein": 0.1, "salt": 0.01, "sweetener_share": 6 },
+          "claims": {
+            "no_added_sugar": { "assessed_count": 40, "detected_count": 2, "not_detected_count": 35, "ambiguous_count": 3, "unassessable_count": 6, "not_assessed_count": 194 },
+            "natural": { "assessed_count": 40, "detected_count": 11, "not_detected_count": 25, "ambiguous_count": 4, "unassessable_count": 6, "not_assessed_count": 194 }
+          },
+          "interpretation": { "analyst_note": "Placeholder text to demonstrate the optional interpretation row." }
+        },
+        {
+          "id": "de-2",
+          "name": "Profile II (placeholder)",
+          "description": "Synthetic demonstration only",
+          "record_count": 175,
+          "metrics": { "energy": 4, "sugars": 0.4, "protein": null, "salt": 0.02, "sweetener_share": 71 },
+          "claims": {
+            "no_added_sugar": { "assessed_count": 31, "detected_count": 17, "not_detected_count": 12, "ambiguous_count": 2, "unassessable_count": 3, "not_assessed_count": 141 },
+            "natural": null
+          },
+          "interpretation": {}
+        }
+      ],
+      "notes": ["Two-column view verifies small segment counts.", "Protein is null for Profile II: unknown, not zero.", "Naturalness wording was not assessed for Profile II."]
+    },
+    {
+      "id": "demo-fr-dairy",
+      "region": "France",
+      "category": "Dairy alternatives",
+      "nutrition_basis": "per 100 g",
+      "segment_count_basis": "Synthetic eligible records for interface testing only; not sales or market share",
+      "metric_groups": [
+        {
+          "id": "composition",
+          "label": "Nutritional composition",
+          "metrics": [
+            { "key": "energy", "label": "Energy", "unit": "kcal/100 g", "statistic": "Illustrative median", "decimals": 0 },
+            { "key": "protein", "label": "Protein", "unit": "g/100 g", "statistic": "Illustrative median" },
+            { "key": "sugars", "label": "Sugars", "unit": "g/100 g", "statistic": "Illustrative median" },
+            { "key": "saturated_fat", "label": "Saturated fat", "unit": "g/100 g", "statistic": "Illustrative median" }
+          ]
+        }
+      ],
+      "claim_rows": [{ "key": "plant_based", "label": "Plant-based wording" }],
+      "segments": [
+        { "id": "fd-1", "name": "Profile α", "description": "Synthetic", "record_count": 64, "metrics": { "energy": 48, "protein": 3.1, "sugars": 2.4, "saturated_fat": 0.3 }, "claims": { "plant_based": { "assessed_count": 12, "detected_count": 10, "ambiguous_count": 1, "unassessable_count": 1 } } },
+        { "id": "fd-2", "name": "Profile β", "description": "Synthetic", "record_count": 88, "metrics": { "energy": 72, "protein": 1.0, "sugars": 7.5, "saturated_fat": 0.2 }, "claims": { "plant_based": { "assessed_count": 15, "detected_count": 9, "unassessable_count": 2 } } },
+        { "id": "fd-3", "name": "Profile γ", "description": "Synthetic", "record_count": 41, "metrics": { "energy": 160, "protein": 2.0, "sugars": 9.0, "saturated_fat": 7.8 }, "claims": { "plant_based": { "assessed_count": 9, "detected_count": 4, "ambiguous_count": 2, "unassessable_count": 0 } } },
+        { "id": "fd-4", "name": "Profile δ", "description": "Synthetic", "record_count": 23, "metrics": { "energy": 95, "protein": 8.5, "sugars": null, "saturated_fat": 1.1 }, "claims": { "plant_based": { "assessed_count": 0, "detected_count": null, "unassessable_count": 3 } } },
+        { "id": "fd-5", "name": "Profile ε", "description": "Synthetic", "record_count": 57, "metrics": { "energy": 58, "protein": 0.6, "sugars": 3.2, "saturated_fat": 0.9 }, "claims": { "plant_based": { "assessed_count": 11, "detected_count": 3, "unassessable_count": 1 } } }
+      ],
+      "notes": ["Five-column view verifies wide tables and horizontal scrolling."]
+    }
+  ]
+}

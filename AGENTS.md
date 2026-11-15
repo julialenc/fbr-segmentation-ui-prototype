@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- `src/segmentation/` is a self-contained, host-agnostic module (types, normalize, format rules, components); keep it free of backend/hosting dependencies so it can be copied into any React app.
+- Report data enters only as `SegmentationReport` JSON validated by `parseReport`; presentation logic must never hardcode segment counts, metric keys or claim keys.
+- All display rules (missing ≠ 0, claim denominators, count wording) live in `format.ts` and are covered by `format.test.ts`.

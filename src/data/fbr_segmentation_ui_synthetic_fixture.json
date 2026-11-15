@@ -1,0 +1,321 @@
+{
+  "schema_version": "0.1-prototype",
+  "synthetic_demo": true,
+  "disclaimer": "SYNTHETIC UI TEST DATA ONLY. Not F&B Radar findings, OFF statistics, or approved segment definitions.",
+  "model": {
+    "status": "UNDECIDED",
+    "algorithm": null,
+    "feature_set": null,
+    "approval_version": null
+  },
+  "views": [
+    {
+      "id": "demo-fr-cereals",
+      "region": "France",
+      "category": "Cereals",
+      "nutrition_basis": "per 100 g",
+      "segment_count_basis": "Synthetic eligible records for interface testing only; not sales or market share",
+      "metric_groups": [
+        {
+          "id": "composition",
+          "label": "Nutritional composition",
+          "metrics": [
+            {
+              "key": "energy",
+              "label": "Energy",
+              "unit": "kcal/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "protein",
+              "label": "Protein",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "total_fat",
+              "label": "Total fat",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "saturated_fat",
+              "label": "Saturated fat",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "carbohydrates",
+              "label": "Carbohydrates",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "sugars",
+              "label": "Sugars",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "fibre",
+              "label": "Fibre",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "salt",
+              "label": "Salt",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            }
+          ]
+        }
+      ],
+      "claim_rows": [
+        {
+          "key": "protein_positioning",
+          "label": "Protein positioning"
+        },
+        {
+          "key": "fibre_positioning",
+          "label": "Fibre positioning"
+        }
+      ],
+      "segments": [
+        {
+          "id": "demo-a",
+          "name": "Profile A (placeholder)",
+          "description": "Illustrative profile, not a discovered cluster",
+          "record_count": 130,
+          "metrics": {
+            "energy": 385,
+            "protein": 10.2,
+            "total_fat": 5.3,
+            "saturated_fat": 1.0,
+            "carbohydrates": 69.0,
+            "sugars": 8.5,
+            "fibre": 10.5,
+            "salt": 0.4
+          },
+          "claims": {
+            "protein_positioning": {
+              "assessed_count": 33,
+              "detected_count": 9,
+              "unassessable_count": 4
+            },
+            "fibre_positioning": {
+              "assessed_count": 33,
+              "detected_count": 6,
+              "unassessable_count": 4
+            }
+          }
+        },
+        {
+          "id": "demo-b",
+          "name": "Profile B (placeholder)",
+          "description": "Illustrative profile, not a discovered cluster",
+          "record_count": 195,
+          "metrics": {
+            "energy": 420,
+            "protein": 7.5,
+            "total_fat": 12.0,
+            "saturated_fat": 4.5,
+            "carbohydrates": 66.0,
+            "sugars": 24.5,
+            "fibre": 5.0,
+            "salt": 0.7
+          },
+          "claims": {
+            "protein_positioning": {
+              "assessed_count": 46,
+              "detected_count": 3,
+              "unassessable_count": 2
+            },
+            "fibre_positioning": {
+              "assessed_count": 46,
+              "detected_count": 5,
+              "unassessable_count": 2
+            }
+          }
+        },
+        {
+          "id": "demo-c",
+          "name": "Profile C (placeholder)",
+          "description": "Illustrative profile, not a discovered cluster",
+          "record_count": 68,
+          "metrics": {
+            "energy": 405,
+            "protein": 13.0,
+            "total_fat": 9.0,
+            "saturated_fat": 2.3,
+            "carbohydrates": 62.0,
+            "sugars": 15.0,
+            "fibre": null,
+            "salt": 0.5
+          },
+          "claims": {
+            "protein_positioning": {
+              "assessed_count": 0,
+              "detected_count": null,
+              "unassessable_count": 5
+            },
+            "fibre_positioning": {
+              "assessed_count": 0,
+              "detected_count": null,
+              "unassessable_count": 5
+            }
+          }
+        }
+      ],
+      "notes": [
+        "All numbers and profiles are invented for UI testing.",
+        "Claim denominators use assessable observations, not all product records.",
+        "Missing fibre is unknown, not zero."
+      ]
+    },
+    {
+      "id": "demo-uk-snacks",
+      "region": "UK & Ireland",
+      "category": "Snacks",
+      "nutrition_basis": "per 100 g",
+      "segment_count_basis": "Synthetic eligible records for interface testing only; not sales or market share",
+      "metric_groups": [
+        {
+          "id": "composition",
+          "label": "Nutritional composition",
+          "metrics": [
+            {
+              "key": "energy",
+              "label": "Energy",
+              "unit": "kcal/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "protein",
+              "label": "Protein",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "sugars",
+              "label": "Sugars",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "fibre",
+              "label": "Fibre",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            },
+            {
+              "key": "salt",
+              "label": "Salt",
+              "unit": "g/100 g",
+              "statistic": "Illustrative median"
+            }
+          ]
+        }
+      ],
+      "claim_rows": [
+        {
+          "key": "protein_positioning",
+          "label": "Protein positioning"
+        }
+      ],
+      "segments": [
+        {
+          "id": "uk-1",
+          "name": "Profile 1 (placeholder)",
+          "description": "Synthetic demonstration only",
+          "record_count": 150,
+          "metrics": {
+            "energy": 510,
+            "protein": 6,
+            "sugars": 6,
+            "fibre": 4,
+            "salt": 1.7
+          },
+          "claims": {
+            "protein_positioning": {
+              "assessed_count": 24,
+              "detected_count": 1,
+              "unassessable_count": 3
+            }
+          }
+        },
+        {
+          "id": "uk-2",
+          "name": "Profile 2 (placeholder)",
+          "description": "Synthetic demonstration only",
+          "record_count": 82,
+          "metrics": {
+            "energy": 455,
+            "protein": 14,
+            "sugars": 12,
+            "fibre": 9,
+            "salt": 1.0
+          },
+          "claims": {
+            "protein_positioning": {
+              "assessed_count": 18,
+              "detected_count": 9,
+              "unassessable_count": 1
+            }
+          }
+        },
+        {
+          "id": "uk-3",
+          "name": "Profile 3 (placeholder)",
+          "description": "Synthetic demonstration only",
+          "record_count": 125,
+          "metrics": {
+            "energy": 490,
+            "protein": 5,
+            "sugars": 38,
+            "fibre": 3,
+            "salt": 0.2
+          },
+          "claims": {
+            "protein_positioning": {
+              "assessed_count": 35,
+              "detected_count": 2,
+              "unassessable_count": 4
+            }
+          }
+        },
+        {
+          "id": "uk-4",
+          "name": "Profile 4 (placeholder)",
+          "description": "Synthetic demonstration only",
+          "record_count": 51,
+          "metrics": {
+            "energy": 370,
+            "protein": 11,
+            "sugars": 18,
+            "fibre": null,
+            "salt": 0.7
+          },
+          "claims": {
+            "protein_positioning": {
+              "assessed_count": 0,
+              "detected_count": null,
+              "unassessable_count": 5
+            }
+          }
+        }
+      ],
+      "notes": [
+        "Second view verifies flexible numbers of segment columns and metric rows.",
+        "All numbers are invented demonstration values."
+      ]
+    }
+  ],
+  "display_rules": {
+    "missing_numeric": "Show “Not available”, never 0",
+    "zero_assessed_claims": "Show “No assessable evidence”, not 0% claims",
+    "claim_incidence": "Only report detected_count / assessed_count, explicitly labeled “among assessed packs”; never treat it as market prevalence",
+    "counts": "Label as synthetic OFF-style record counts; never sales, market share, distribution or product success",
+    "status": "Display prominent “Demo data · no analytical results approved” throughout the prototype"
+  }
+}
