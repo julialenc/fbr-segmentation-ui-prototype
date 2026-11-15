@@ -33,3 +33,4 @@ use the editor.
 - `src/segmentation/` is a self-contained, host-agnostic module (types, normalize, format rules, components); keep it free of backend/hosting dependencies so it can be copied into any React app.
 - Report data enters only as `SegmentationReport` JSON validated by `parseReport`; presentation logic must never hardcode segment counts, metric keys or claim keys.
 - All display rules (missing ≠ 0, claim denominators, count wording) live in `format.ts` and are covered by `format.test.ts`.
+- Phones (`compact` variant: width < 768px or height ≤ 500px) render `MobileComparison` (characteristic-first, page scroll); larger screens render `ComparisonTable`. Both share `format.ts` and the same view data — never fork formatting logic.

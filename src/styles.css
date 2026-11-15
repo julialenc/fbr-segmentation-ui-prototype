@@ -10,6 +10,12 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+/* Phones: narrow portrait OR short landscape viewports get the characteristic-first layout. */
+@custom-variant compact {
+  @media (max-width: 767.98px), (max-height: 500px) {
+    @slot;
+  }
+}
 
 /*
  * Design system definition.

@@ -177,13 +177,13 @@ function Explain({ span, children }: { span: number; children: ReactNode }) {
   );
 }
 
-const Bar = ({ value }: { value: number }) => (
+export const Bar = ({ value }: { value: number }) => (
   <div className="mt-1.5 h-[3px] w-full max-w-28 bg-muted" aria-hidden>
     <div className="h-full bg-bar" style={{ width: `${Math.max(2, value * 100)}%` }} />
   </div>
 );
 
-function ClaimCell({ evidence, showBar }: { evidence: ClaimEvidence | null | undefined; showBar: boolean }) {
+export function ClaimCell({ evidence, showBar }: { evidence: ClaimEvidence | null | undefined; showBar: boolean }) {
   const d = claimDisplay(evidence);
   if (d.kind === "missing") return <span className="text-xs italic text-muted-foreground">Not assessed</span>;
   const e = d.evidence;

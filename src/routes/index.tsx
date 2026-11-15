@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useRef, useState } from "react";
 import { demoReport } from "@/data/demo-report";
 import {
-  CLAIMS_GROUP, ComparisonTable, INTERPRETATION_GROUP, parseReport, SyntheticNotice,
+  CLAIMS_GROUP, ComparisonTable, INTERPRETATION_GROUP, MobileComparison, parseReport, SyntheticNotice,
   ViewContext, ViewSelector, type SegmentationReport,
 } from "@/segmentation";
 
@@ -47,7 +47,7 @@ function Index() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-clip">
       <SyntheticNotice report={report} />
       <header className="mx-auto max-w-[1400px] px-5 pb-6 pt-10 md:px-8">
         <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Food &amp; Beverage Positioning Radar · Segment comparison</p>
@@ -82,9 +82,14 @@ function Index() {
       </section>
 
       <main className="mx-auto max-w-[1400px] px-0 md:px-8">
-        <ComparisonTable view={view} hiddenGroups={hidden} showBars={bars} />
+        <div className="block compact:hidden">
+          <ComparisonTable view={view} hiddenGroups={hidden} showBars={bars} />
+        </div>
+        <div className="hidden compact:block">
+          <MobileComparison view={view} hiddenGroups={hidden} showBars={bars} />
+        </div>
         <p className="px-5 pt-2 text-xs text-muted-foreground md:px-0">
-          n = count of records in the analytical population defined below. Not sales, market share, penetration or consumer demand. Expand a row for its definition.
+          n = count of records in the analytical population defined below. Not sales, market share, penetration or consumer demand.
         </p>
       </main>
 

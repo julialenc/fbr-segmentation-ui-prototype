@@ -5,3 +5,4 @@ export { ComparisonTable, CLAIMS_GROUP, INTERPRETATION_GROUP } from "./component
 export { ViewSelector } from "./components/ViewSelector";
 export { ViewContext } from "./components/ViewContext";
 export { SyntheticNotice } from "./components/SyntheticNotice";
+export { MobileComparison } from "./components/MobileComparison";
