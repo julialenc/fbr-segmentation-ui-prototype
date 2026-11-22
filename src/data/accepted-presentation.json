@@ -1,0 +1,575 @@
+{
+  "schema_version": "1.0-presentation",
+  "synthetic_demo": false,
+  "model": {
+    "status": "ACCEPTED_FROZEN",
+    "algorithm": null,
+    "feature_set": null,
+    "approval_version": "wave2_analytical_v1"
+  },
+  "views": [],
+  "research": {
+    "release": {
+      "version": "wave2_analytical_v1",
+      "status": "ACCEPTED_FROZEN",
+      "cutoff": "29 September 2026",
+      "retrieved": "17 October 2026",
+      "unit": "barcode–region–category assignments",
+      "digest": "48212697d2d245e3cc543032d63699b7e83fb43ad5db8dce7cbb8714991f0557"
+    },
+    "families": [
+      {
+        "id": "soda",
+        "title": "Soda",
+        "category": "Beverages",
+        "outcome": "Descriptive profile retained",
+        "conclusion": "A very-low-sugars profile is retained within comparable liquid sodas. Selected UK/Irish assessments support a difference in sugar-related communication.",
+        "basis": "per 100 ml",
+        "rule": "Sugars ≤0.5 g/100 ml, within the accepted comparable-liquid population.",
+        "proposition": "Sugar-related communication",
+        "regions": [
+          {
+            "region": "FR",
+            "otherCommunication": {
+              "population": 2760,
+              "matched": 82,
+              "usable": 82,
+              "positive": 1,
+              "nonDetection": 37,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 44,
+              "unassessed": 2678,
+              "marketLimited": 0,
+              "known": 38
+            },
+            "population": 3837,
+            "measurable": 3473,
+            "profile": 713,
+            "other": 2760,
+            "unknown": 364,
+            "communication": {
+              "population": 713,
+              "matched": 13,
+              "usable": 13,
+              "positive": 6,
+              "nonDetection": 1,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 6,
+              "unassessed": 700,
+              "marketLimited": 0,
+              "known": 7
+            }
+          },
+          {
+            "region": "UK-IE",
+            "otherCommunication": {
+              "population": 388,
+              "matched": 94,
+              "usable": 94,
+              "positive": 1,
+              "nonDetection": 42,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 51,
+              "unassessed": 294,
+              "marketLimited": 0,
+              "known": 43
+            },
+            "population": 728,
+            "measurable": 643,
+            "profile": 255,
+            "other": 388,
+            "unknown": 85,
+            "communication": {
+              "population": 255,
+              "matched": 59,
+              "usable": 59,
+              "positive": 28,
+              "nonDetection": 15,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 16,
+              "unassessed": 196,
+              "marketLimited": 0,
+              "known": 43
+            }
+          },
+          {
+            "region": "US-CA",
+            "otherCommunication": {
+              "population": 324,
+              "matched": 125,
+              "usable": 125,
+              "positive": 1,
+              "nonDetection": 41,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 83,
+              "unassessed": 199,
+              "marketLimited": 0,
+              "known": 42
+            },
+            "population": 6406,
+            "measurable": 420,
+            "profile": 96,
+            "other": 324,
+            "unknown": 5986,
+            "communication": {
+              "population": 96,
+              "matched": 33,
+              "usable": 33,
+              "positive": 14,
+              "nonDetection": 8,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 11,
+              "unassessed": 63,
+              "marketLimited": 0,
+              "known": 22
+            }
+          }
+        ]
+      },
+      {
+        "id": "biscuit",
+        "title": "Biscuits",
+        "category": "Snacks",
+        "outcome": "Variation without an additional profile",
+        "conclusion": "Biscuits differ in fat, salt and protein even at similar sugars. The investigated differences did not justify an additional named nutritional profile.",
+        "basis": "per 100 g",
+        "rule": "Within-format matched comparisons; no retained nutritional threshold.",
+        "proposition": null,
+        "regions": [
+          {
+            "region": "FR",
+            "population": 15864,
+            "measurable": 14434,
+            "unknown": 1430,
+            "pairs": 7210,
+            "metrics": [
+              {
+                "label": "Fat",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 5.0,
+                "decimals": 2
+              },
+              {
+                "label": "Salt",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 0.3,
+                "decimals": 2
+              },
+              {
+                "label": "Protein",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 1.2,
+                "decimals": 2
+              }
+            ]
+          },
+          {
+            "region": "UK-IE",
+            "population": 1731,
+            "measurable": 1571,
+            "unknown": 160,
+            "pairs": 781,
+            "metrics": [
+              {
+                "label": "Fat",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 5.4,
+                "decimals": 2
+              },
+              {
+                "label": "Salt",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 0.25,
+                "decimals": 2
+              },
+              {
+                "label": "Protein",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 1.2,
+                "decimals": 2
+              }
+            ]
+          },
+          {
+            "region": "US-CA",
+            "population": 9471,
+            "measurable": 861,
+            "unknown": 8610,
+            "pairs": 426,
+            "metrics": [
+              {
+                "label": "Fat",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 4.9,
+                "decimals": 2
+              },
+              {
+                "label": "Salt",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 0.29,
+                "decimals": 2
+              },
+              {
+                "label": "Protein",
+                "unit": "g/100 g",
+                "statistic": "Median absolute paired difference",
+                "value": 2.12,
+                "decimals": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pudding",
+        "title": "Dessert creams & puddings",
+        "category": "Dairy",
+        "outcome": "Descriptive profile retained",
+        "conclusion": "A recurring higher-protein, lower-energy profile is retained. Assessed protein communication is too sparse to characterize that profile.",
+        "basis": "per 100 g",
+        "rule": "Protein ≥8 g/100 g and energy 10–110 kcal/100 g, within the accepted comparable format.",
+        "proposition": "Protein communication",
+        "regions": [
+          {
+            "region": "FR",
+            "otherCommunication": {
+              "population": 989,
+              "matched": 31,
+              "usable": 31,
+              "positive": 1,
+              "nonDetection": 9,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 21,
+              "unassessed": 958,
+              "marketLimited": 0,
+              "known": 10
+            },
+            "population": 1129,
+            "measurable": 1016,
+            "profile": 27,
+            "other": 989,
+            "unknown": 113,
+            "communication": {
+              "population": 27,
+              "matched": 0,
+              "usable": 0,
+              "positive": 0,
+              "nonDetection": 0,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 0,
+              "unassessed": 27,
+              "marketLimited": 0,
+              "known": 0
+            },
+            "metrics": [
+              {
+                "label": "Protein",
+                "unit": "g/100 g",
+                "statistic": "Retained-profile median",
+                "value": 10.0,
+                "decimals": 1,
+                "other": 3.1
+              },
+              {
+                "label": "Energy",
+                "unit": "kcal/100 g",
+                "statistic": "Retained-profile median",
+                "value": 76.0,
+                "decimals": 1
+              },
+              {
+                "label": "Fat",
+                "unit": "g/100 g",
+                "statistic": "Retained-profile median",
+                "value": 1.5,
+                "decimals": 1
+              },
+              {
+                "label": "Sugars",
+                "unit": "g/100 g",
+                "statistic": "Retained-profile median",
+                "value": 4.5,
+                "decimals": 1,
+                "other": 15.0
+              }
+            ]
+          },
+          {
+            "region": "UK-IE",
+            "otherCommunication": {
+              "population": 21,
+              "matched": 5,
+              "usable": 5,
+              "positive": 0,
+              "nonDetection": 3,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 2,
+              "unassessed": 16,
+              "marketLimited": 0,
+              "known": 3
+            },
+            "population": 38,
+            "measurable": 36,
+            "profile": 15,
+            "other": 21,
+            "unknown": 2,
+            "communication": {
+              "population": 15,
+              "matched": 1,
+              "usable": 1,
+              "positive": 1,
+              "nonDetection": 0,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 0,
+              "unassessed": 14,
+              "marketLimited": 0,
+              "known": 1
+            },
+            "metrics": [
+              {
+                "label": "Protein",
+                "unit": "g/100 g",
+                "statistic": "Retained-profile median",
+                "value": 10.0,
+                "decimals": 1,
+                "other": 3.4
+              },
+              {
+                "label": "Energy",
+                "unit": "kcal/100 g",
+                "statistic": "Retained-profile median",
+                "value": 80.8,
+                "decimals": 1
+              },
+              {
+                "label": "Fat",
+                "unit": "g/100 g",
+                "statistic": "Retained-profile median",
+                "value": 1.6,
+                "decimals": 1
+              },
+              {
+                "label": "Sugars",
+                "unit": "g/100 g",
+                "statistic": "Retained-profile median",
+                "value": 4.5,
+                "decimals": 1,
+                "other": 15.4
+              }
+            ]
+          },
+          {
+            "region": "US-CA",
+            "otherCommunication": {
+              "population": 11,
+              "matched": 0,
+              "usable": 0,
+              "positive": 0,
+              "nonDetection": 0,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 0,
+              "unassessed": 11,
+              "marketLimited": 0,
+              "known": 0
+            },
+            "population": 18,
+            "measurable": 12,
+            "profile": 1,
+            "other": 11,
+            "unknown": 6,
+            "communication": {
+              "population": 1,
+              "matched": 0,
+              "usable": 0,
+              "positive": 0,
+              "nonDetection": 0,
+              "humanNegative": 0,
+              "uncertain": 0,
+              "otherUnknown": 0,
+              "unassessed": 1,
+              "marketLimited": 0,
+              "known": 0
+            }
+          }
+        ]
+      }
+    ],
+    "sodaContrast": {
+      "positiveProfile": 28.0,
+      "knownProfile": 43.0,
+      "populationProfile": 255.0,
+      "positiveOther": 1.0,
+      "knownOther": 43.0,
+      "populationOther": 388.0,
+      "effect": 0.627906976744186,
+      "lo": 0.4495597583961801,
+      "hi": 0.7540189895593148
+    },
+    "catalogue": [
+      {
+        "branch": "Granola",
+        "decision": "approved descriptive profile",
+        "scope_note": "observed products; no market prevalence inference"
+      },
+      {
+        "branch": "Cream/pudding",
+        "decision": "approved descriptive profile",
+        "scope_note": "observed products; no market prevalence inference"
+      },
+      {
+        "branch": "Potato crisps",
+        "decision": "approved descriptive profile",
+        "scope_note": "observed products; no market prevalence inference"
+      },
+      {
+        "branch": "soda",
+        "decision": "approved descriptive profile",
+        "scope_note": "observed products; no market prevalence inference"
+      },
+      {
+        "branch": "energy drink",
+        "decision": "approved descriptive profile",
+        "scope_note": "observed products; no market prevalence inference"
+      },
+      {
+        "branch": "Flakes",
+        "decision": "commercial distinction and nutritional variation",
+        "scope_note": "Finer cereal wording may explain sugar contrasts; no retained nutritional split."
+      },
+      {
+        "branch": "Mousse; flan",
+        "decision": "nutritional variation and density view",
+        "scope_note": "Retain per-weight and per-calorie views within form."
+      },
+      {
+        "branch": "Other identified dairy desserts",
+        "decision": "insufficient evidence for further profile",
+        "scope_note": "Small comparable regional populations; keep forms."
+      },
+      {
+        "branch": "Unresolved dairy desserts",
+        "decision": "unresolved commercial identity",
+        "scope_note": "1536 unspecified, conflicting or comparability-concern assignments retained broadly."
+      },
+      {
+        "branch": "Biscuits",
+        "decision": "nutritional variation",
+        "scope_note": "Control contrast partly persists; independent three-nutrient co-occurrence too weak for segment."
+      },
+      {
+        "branch": "Wafers",
+        "decision": "insufficient evidence for further profile",
+        "scope_note": "Weak UK/IE cross-group support."
+      },
+      {
+        "branch": "Tortilla/corn chips",
+        "decision": "nutritional variation",
+        "scope_note": "Threshold divides the middle; French saturated-fat tail exploratory."
+      },
+      {
+        "branch": "Puffed/extruded snacks",
+        "decision": "commercial base and construction distinction",
+        "scope_note": "Pulse and potato wording contextualize protein; no universal formulation split."
+      },
+      {
+        "branch": "Other savoury formats",
+        "decision": "classified; formulation follow-up uninvestigated",
+        "scope_note": "Popcorn, pretzels, crackers, nuts/seeds and other forms have not received this within-format follow-up."
+      },
+      {
+        "branch": "Plant drinks",
+        "decision": "commercial base distinction",
+        "scope_note": "Soy versus almond useful; captured oat and other bases sparse/incomplete."
+      },
+      {
+        "branch": "Iced tea; iced coffee; sports/electrolyte liquids",
+        "decision": "insufficient regional replication",
+        "scope_note": "Retain format and descriptive evidence."
+      },
+      {
+        "branch": "Smoothies; nectars; fruit drinks; fermented soft drinks",
+        "decision": "commercial distinction and nutritional variation",
+        "scope_note": "No further accepted profile."
+      },
+      {
+        "branch": "Water; flavoured water; coconut water",
+        "decision": "commercial distinction and unresolved descriptors",
+        "scope_note": "Unspecified flavour is not verified plain water."
+      },
+      {
+        "branch": "Juice",
+        "decision": "composition-based commercial distinction",
+        "scope_note": "Fruit/vegetable, named types and blends; concentration descriptor independent; no nutritional profile."
+      },
+      {
+        "branch": "Preparations",
+        "decision": "deferred measurement basis",
+        "scope_note": "Syrups, concentrates, chocolate, coffee, tea, sports powders/tablets kept separate."
+      },
+      {
+        "branch": "Alcohol",
+        "decision": "excluded nutritional segmentation scope",
+        "scope_note": "Underlying reporting and source population preserved."
+      },
+      {
+        "branch": "Other cereal and dairy branches",
+        "decision": "uninvestigated within-format follow-up",
+        "scope_note": "Baseline H1-H12 results do not establish final profiles for every subtype."
+      },
+      {
+        "branch": "Pooled k=5 control",
+        "decision": "completed exploratory reference",
+        "scope_note": "No further optimization; format influence and mixed populations limit commercial interpretation."
+      }
+    ],
+    "sources": [
+      {
+        "path": "presentations/segmentation/first_run/04_analytical_package/output/population_summary_v1.csv",
+        "sha256": "ee84e2eb6624838762040a27f24d96f181c1a7684d66817284dbffa95cea791f"
+      },
+      {
+        "path": "presentations/segmentation/first_run/04_analytical_package/output/communication_coverage_v1.csv",
+        "sha256": "ca88e92400a0dbdd951e9c801eb07902a8b5c10f3ebd875244a154338bcf14b3"
+      },
+      {
+        "path": "presentations/segmentation/first_run/04_analytical_package/output/approved_findings_v1.json",
+        "sha256": "f1884b128dca098cbca4f47f33c7ac9c16b7635b5e90ce4ff17bfe3cc4aefba8"
+      },
+      {
+        "path": "presentations/segmentation/first_run/03_lenses/AUDIT_v1.md",
+        "sha256": "65c760b57a6c95edfbf0adf706e6f421c875d2d6f63fb1996ed82f0320fdc10b"
+      },
+      {
+        "path": "presentations/segmentation/first_run/03_lenses/01_nutritional_composition/biscuits_and_wafers_CHECK_v1.md",
+        "sha256": "4bd3d66e8baf687c572da0bcd1dc8cd0e6922d9c5ce6498e6e63605b734b7f86"
+      },
+      {
+        "path": "presentations/segmentation/first_run/03_lenses/02_nutrient_density/dairy_dessert_formulations_v1.md",
+        "sha256": "4db7b7db308ea49994a0651252f7db22e4c41a29b232147cf2c8d7acdd7cefff"
+      },
+      {
+        "path": "presentations/segmentation/first_run/03_lenses/FORMULATION_DECISIONS_v1.csv",
+        "sha256": "93ddaab1f55299081c0fbaec0ef362cc27506b25bf750a88e6ec5796db6595d3"
+      }
+    ]
+  }
+}

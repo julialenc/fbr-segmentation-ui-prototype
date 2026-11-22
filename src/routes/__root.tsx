@@ -25,6 +25,7 @@ function NotFoundComponent() {
         <div className="mt-6">
           <Link
             to="/"
+            search={{ area: "overview", family: "", region: "FR" }}
             className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Go home
@@ -81,8 +82,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "F&B Positioning Radar — Segment comparison" },
-      { name: "description", content: "Prototype interface for comparing food and beverage product segments." },
+      { title: "F&B Positioning Radar — Product positioning research" },
+      {
+        name: "description",
+        content: "Accepted Wave 2 research on food and beverage product positioning.",
+      },
     ],
     links: [
       {

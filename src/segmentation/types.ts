@@ -7,7 +7,7 @@
  * once the segmentation method is approved. Adapt here and in `normalize.ts`.
  *
  * Conventions
- * - `null` or an absent key means "not available" — never zero.
+ * - `null` or an absent key means "not available" â€” never zero.
  * - Counts are counts of records from a named analytical population
  *   (`segment_count_basis`). They are never sales, share or demand.
  * - Claim figures use the assessed-pack denominator (`assessed_count`).
@@ -15,7 +15,7 @@
 
 /** Model provenance. Everything may be null while the method is undecided. */
 export interface ModelInfo {
-  status: string; // e.g. "UNDECIDED" | "DRAFT" | "APPROVED" — free text by design
+  status: string; // e.g. "UNDECIDED" | "DRAFT" | "APPROVED" â€” free text by design
   algorithm: string | null;
   feature_set: string | null;
   approval_version: string | null;
@@ -56,12 +56,12 @@ export interface ClaimDefinition {
 
 /**
  * Evidence tallies for one claim within one segment.
- * Status vocabulary: detected · not detected · ambiguous · unassessable · not assessed.
+ * Status vocabulary: detected Â· not detected Â· ambiguous Â· unassessable Â· not assessed.
  * Only `assessed_count` and `detected_count` are required by the fixture;
  * the others render only when supplied (they are never derived).
  */
 export interface ClaimEvidence {
-  /** Packs whose evidence was assessable — the incidence denominator. */
+  /** Packs whose evidence was assessable â€” the incidence denominator. */
   assessed_count: number | null;
   detected_count: number | null;
   not_detected_count?: number | null | undefined;
@@ -92,7 +92,7 @@ export interface Segment {
   notes?: string[] | undefined;
 }
 
-/** One region × category result. Views are NOT comparable with each other. */
+/** One region Ã— category result. Views are NOT comparable with each other. */
 export interface SegmentationView {
   id: string;
   region: string;
@@ -111,6 +111,8 @@ export interface SegmentationView {
 }
 
 export interface SegmentationReport {
+  /** Accepted presentation export; legacy synthetic views remain supported. */
+  research?: import("./research").ResearchPresentation;
   schema_version: string;
   synthetic_demo: boolean;
   disclaimer?: string | null | undefined;
